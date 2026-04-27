@@ -74,3 +74,32 @@ Dokumentasi Hasil Query (Screenshot dari folder `SS tugas 6`)
 
 **5.2 Top 5 buku termahal**
 ![Top 5 Termahal](./SS%20tugas%206/2.%20Top%205%20buku%20dengan%20harga%20termahal.png)
+
+
+## Tugas 2: Desain Database Lengkap (60%)
+
+Pengembangan database `perpustakaan_lengkap` dengan struktur relasional (Normalisasi), penggunaan Foreign Keys, dan fitur-fitur lanjutan.
+
+### 1. Entity Relationship Diagram (ERD)
+Diagram ini menunjukkan relasi *One-to-Many* antara tabel Buku dengan tabel master Kategori, Penerbit, dan Rak.
+![ERD Perpustakaan](./SS%20tugas%207/Screenshot%202026-04-27%20235913.png)
+
+### 2. Implementasi Query JOIN
+Query untuk menampilkan detail lengkap buku dengan menggabungkan tabel `kategori_buku` dan `penerbit`.
+![Hasil JOIN](./SS%20tugas%207/Screenshot%202026-04-27%20235659.png)
+
+### 3. Agregasi Relasional
+Menghitung jumlah judul buku berdasarkan kategori yang tersedia di tabel master.
+![Buku Per Kategori](./SS%20tugas%207/Screenshot%202026-04-27%20235713.png)
+
+### 4. Fitur Bonus (+10%)
+* **Tabel Rak:** Relasi untuk menentukan lokasi fisik buku di perpustakaan.
+* **Soft Delete:** Implementasi kolom `is_deleted` untuk menjaga keamanan data dari penghapusan permanen.
+* **Stored Procedure:** Menggunakan prosedur `UpdateStok` untuk mempermudah manajemen stok buku secara otomatis.
+
+---
+
+## 🚀 Cara Penggunaan
+1. Import file `NIM_Nama_database.sql` ke phpMyAdmin Anda.
+2. Pastikan database `perpustakaan_lengkap` sudah terpilih.
+3. Jalankan query laporan yang tersedia di folder kueri.
